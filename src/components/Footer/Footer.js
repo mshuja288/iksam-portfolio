@@ -5,7 +5,8 @@ import {
   FaTwitter,
   FaEnvelope,
   FaPhone,
-  FaMapMarkerAlt
+  FaMapMarkerAlt,
+  FaWhatsapp
 } from 'react-icons/fa';
 import {
   FooterContainer,
@@ -33,13 +34,16 @@ function Footer() {
             Creating scalable, efficient, and user-friendly solutions.
           </FooterText>
           <SocialLinks>
-            <SocialIconLink href="https://github.com/mshuja288" target="_blank" aria-label="GitHub">
+            <SocialIconLink href="https://github.com/mayashamaim" target="_blank" aria-label="GitHub">
               <FaGithub />
             </SocialIconLink>
-            {/* <SocialIconLink href="https://linkedin.com/in/yourusername" target="_blank" aria-label="LinkedIn">
+            <SocialIconLink href="http://www.linkedin.com/in/haram-shamaim-b44678360" target="_blank" aria-label="LinkedIn">
               <FaLinkedin />
             </SocialIconLink>
-            <SocialIconLink href="https://twitter.com/yourusername" target="_blank" aria-label="Twitter">
+            <SocialIconLink href="https://linkedin.com/in/yourusername" target="_blank" aria-label="Whatsapp">
+              <FaWhatsapp />
+            </SocialIconLink>
+            {/* <SocialIconLink href="https://twitter.com/yourusername" target="_blank" aria-label="Twitter">
               <FaTwitter />
             </SocialIconLink> */}
           </SocialLinks>
@@ -58,11 +62,11 @@ function Footer() {
           <ContactInfo>
             <ContactItem>
               <FaEnvelope />
-              <span>mshuja288@gmail.com</span>
+              <span>shamaimharram@gmail.com</span>
             </ContactItem>
             <ContactItem>
               <FaPhone />
-              <span>+92 305 6305158</span>
+              <span>+92 370 6979629</span>
             </ContactItem>
             <ContactItem>
               <FaMapMarkerAlt />
@@ -74,7 +78,7 @@ function Footer() {
 
       <FooterBottom>
         <Copyright>
-          Shuja © {new Date().getFullYear()} . All rights reserved.
+          IKSAM CODE LAB © {new Date().getFullYear()} . All rights reserved.
         </Copyright>
       </FooterBottom>
     </FooterContainer>

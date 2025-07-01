@@ -40,7 +40,7 @@ function Navbar() {
           <NavbarContainer>
             <NavLogo to='/' onClick={closeMobileMenu}>
               {/*<NavIcon />*/}
-              Shuja Portfolio
+              IKSAM CODE LAB
             </NavLogo>
             <MobileIcon onClick={handleClick}>
               {click ? <FaTimes /> : <FaBars />}

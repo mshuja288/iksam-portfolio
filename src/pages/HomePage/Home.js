@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { motion } from 'framer-motion';
-import { useHistory } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import { homeObjOne, homeObjTwo, homeObjThree, homeObjFour } from './Data';
 import { InfoSection } from '../../components';
 import { FaReact, FaNodeJs, FaPython } from 'react-icons/fa';
@@ -111,7 +111,7 @@ const TechIcon = styled(motion.div)`
 `;
 
 const Home = () => {
-  const history = useHistory();
+  const navigate = useNavigate();
 
   const scrollToFooter = () => {
     // Try multiple selectors to find the footer
@@ -137,11 +137,11 @@ const Home = () => {
   };
 
   const navigateToProjects = () => {
-    history.push('/projects');
+    navigate('/projects');
   };
 
   const navigateToServices = () => {
-    history.push('/services');
+    navigate('/services');
   };
 
   return (
