@@ -33,15 +33,15 @@ function Footer() {
             Creating scalable, efficient, and user-friendly solutions.
           </FooterText>
           <SocialLinks>
-            <SocialIconLink href="https://github.com/yourusername" target="_blank" aria-label="GitHub">
+            <SocialIconLink href="https://github.com/mshuja288" target="_blank" aria-label="GitHub">
               <FaGithub />
             </SocialIconLink>
-            <SocialIconLink href="https://linkedin.com/in/yourusername" target="_blank" aria-label="LinkedIn">
+            {/* <SocialIconLink href="https://linkedin.com/in/yourusername" target="_blank" aria-label="LinkedIn">
               <FaLinkedin />
             </SocialIconLink>
             <SocialIconLink href="https://twitter.com/yourusername" target="_blank" aria-label="Twitter">
               <FaTwitter />
-            </SocialIconLink>
+            </SocialIconLink> */}
           </SocialLinks>
         </FooterSection>
 
@@ -58,15 +58,15 @@ function Footer() {
           <ContactInfo>
             <ContactItem>
               <FaEnvelope />
-              <span>your.email@example.com</span>
+              <span>mshuja288@gmail.com</span>
             </ContactItem>
             <ContactItem>
               <FaPhone />
-              <span>+1 234 567 890</span>
+              <span>+92 305 6305158</span>
             </ContactItem>
             <ContactItem>
               <FaMapMarkerAlt />
-              <span>Your Location, Country</span>
+              <span>Mandi Bahauddin, Punjab, Pakistan</span>
             </ContactItem>
           </ContactInfo>
         </FooterSection>
@@ -74,7 +74,7 @@ function Footer() {
 
       <FooterBottom>
         <Copyright>
-          © {new Date().getFullYear()} IKSAM. All rights reserved.
+          Shuja © {new Date().getFullYear()} . All rights reserved.
         </Copyright>
       </FooterBottom>
     </FooterContainer>

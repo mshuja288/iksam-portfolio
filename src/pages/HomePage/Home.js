@@ -7,12 +7,27 @@ import { InfoSection } from '../../components';
 import { FaReact, FaNodeJs, FaPython } from 'react-icons/fa';
 import { SiTypescript, SiFlutter, SiCsharp } from 'react-icons/si';
 
+// Import images
+import heroBg from '../../assets/images/hero-bg.png';
+
 const HeroSection = styled.section`
   height: 100vh;
   max-height: 1100px;
   position: relative;
   overflow: hidden;
-  background: linear-gradient(135deg, #1a1a1a 0%, #2a2a2a 100%);
+  background: linear-gradient(135deg, rgba(26, 26, 26, 0.9) 0%, rgba(42, 42, 42, 0.9) 100%), 
+              url(${heroBg}) center/cover no-repeat;
+  
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 1;
+  }
 `;
 
 const HeroWrapper = styled.div`
@@ -26,7 +41,7 @@ const HeroWrapper = styled.div`
 `;
 
 const HeroContent = styled.div`
-  z-index: 10;
+  z-index: 2;
   display: flex;
   flex-direction: column;
   max-width: 1200px;

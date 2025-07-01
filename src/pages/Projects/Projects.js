@@ -260,7 +260,7 @@ const Projects = () => {
                     <TechTag key={tech}>{tech}</TechTag>
                   ))}
                 </TechStack>
-                <ProjectLinks>
+                {/* <ProjectLinks>
                   <ProjectLink 
                     href={project.github} 
                     target="_blank" 
@@ -277,7 +277,7 @@ const Projects = () => {
                   >
                     <FaExternalLinkAlt /> Live Demo
                   </ProjectLink>
-                </ProjectLinks>
+                </ProjectLinks> */}
               </ProjectContent>
             </ProjectCard>
           ))}
