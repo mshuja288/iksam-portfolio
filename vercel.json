@@ -1,6 +1,9 @@
 {
-  "buildCommand": "NODE_OPTIONS=--openssl-legacy-provider npm run build",
-  "installCommand": "npm install",
+  "buildCommand": "npm run build",
+  "installCommand": "npm install --production=false",
   "framework": "create-react-app",
-  "outputDirectory": "build"
+  "outputDirectory": "build",
+  "env": {
+    "NODE_OPTIONS": "--openssl-legacy-provider"
+  }
 } 
