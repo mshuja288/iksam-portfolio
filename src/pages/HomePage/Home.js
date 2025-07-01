@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 import { useNavigate } from 'react-router-dom';
 import { homeObjOne, homeObjTwo, homeObjThree, homeObjFour } from './Data';
 import { InfoSection } from '../../components';
-import { FaReact, FaNodeJs, FaPython } from 'react-icons/fa';
+import { FaReact, FaNodeJs, FaPython, FaWhatsapp } from 'react-icons/fa';
 import { SiTypescript, SiFlutter, SiCsharp } from 'react-icons/si';
 
 // Import images
@@ -144,6 +144,13 @@ const Home = () => {
     navigate('/services');
   };
 
+  const openWhatsApp = () => {
+    const phoneNumber = '923706979629';
+    const message = encodeURIComponent("Hi! I'm interested in your development services. Can we discuss a project?");
+    const whatsappUrl = `https://wa.me/${phoneNumber}?text=${message}`;
+    window.open(whatsappUrl, '_blank');
+  };
+
   return (
     <>
       <HeroSection>
@@ -179,6 +186,15 @@ const Home = () => {
                 onClick={scrollToFooter}
               >
                 Contact Me
+              </Button>
+              <Button
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+                onClick={openWhatsApp}
+                style={{ backgroundColor: '#25D366', borderColor: '#25D366', display: 'flex', alignItems: 'center', gap: '8px' }}
+              >
+                <FaWhatsapp />
+                WhatsApp
               </Button>
             </HeroButtons>
             <TechStack>

@@ -40,7 +40,7 @@ function Footer() {
             <SocialIconLink href="http://www.linkedin.com/in/haram-shamaim-b44678360" target="_blank" aria-label="LinkedIn">
               <FaLinkedin />
             </SocialIconLink>
-            <SocialIconLink href="https://linkedin.com/in/yourusername" target="_blank" aria-label="Whatsapp">
+            <SocialIconLink href="https://wa.me/923706979629?text=Hi! I'm interested in your development services. Can we discuss a project?" target="_blank" aria-label="WhatsApp">
               <FaWhatsapp />
             </SocialIconLink>
             {/* <SocialIconLink href="https://twitter.com/yourusername" target="_blank" aria-label="Twitter">
@@ -67,6 +67,17 @@ function Footer() {
             <ContactItem>
               <FaPhone />
               <span>+92 370 6979629</span>
+            </ContactItem>
+            <ContactItem>
+              <FaWhatsapp />
+              <a 
+                href="https://wa.me/923706979629?text=Hi! I'm interested in your development services. Can we discuss a project?" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                style={{ color: '#a9b3c1', textDecoration: 'none' }}
+              >
+                Chat on WhatsApp
+              </a>
             </ContactItem>
             <ContactItem>
               <FaMapMarkerAlt />
